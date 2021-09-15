@@ -30,7 +30,7 @@ quiz = {
 }
 
 
-print("Hello and welcome to the rosh hashanah quiz!")
+print("Hello and welcome to the rosh hashanah quiz!\n")
 time.sleep(2)
 
 points = 0
@@ -40,13 +40,14 @@ for quest in quiz:
     print(quiz[quest]['question'] + "\n")
     for ans in quiz[quest]['answer_random'] and range(4):
         The_chosen_one = random.choice(quiz[quest]['answer_random'])
-        print(The_chosen_one)
+        print(The_chosen_one + "\n")
         quiz[quest]['answer_random'].remove(The_chosen_one)
     user_res = input("Enter your answer: ")
     if user_res == quiz[quest]['answer'][0]:
         print("Correct! Good job! :)\n\n")
         points += 1
     else:
-        print("Incorrect answer\n\n")
+        print("Incorrect answer\n")
+        print(f"The correct answer is: {quiz[quest]['answer'][0]}\n")
 
 print(f"You got {points} questions right")
