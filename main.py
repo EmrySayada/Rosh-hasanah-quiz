@@ -24,13 +24,38 @@ quiz = {
     },
     5 : {
         "question" : "The lock pray is: ",
-        "answer" : ["A prayer recited on Simchat Torah when the Torah scrolls are locked in the Ark.", "A prayer that opens the new year and locks the previous one.", "The last prayer said on Yom Kippur, and it closes this day.", "A prayer that closes the last of the Tishrei holidays - Shemini Atzeret."],
+        "answer" : ["The last prayer said on Yom Kippur, and it closes this day.", "A prayer that opens the new year and locks the previous one.", "The last prayer said on Yom Kippur, and it closes this day.", "A prayer that closes the last of the Tishrei holidays - Shemini Atzeret."],
         "answer_random" : ["A prayer recited on Simchat Torah when the Torah scrolls are locked in the Ark.", "A prayer that opens the new year and locks the previous one.", "The last prayer said on Yom Kippur, and it closes this day.", "A prayer that closes the last of the Tishrei holidays - Shemini Atzeret."]
+    },
+    6 : {
+        "question" : "The 'worst days' is a nickname for: ",
+        "answer" : ["The days from Rrosh hashanah to Yom Kipur which according to the bible is the days of law and sentence.", "all of the days in Teshrai that they are the law and sentence days.", "The Yom Kipurim war in 1973.", "The days in Elul when the slichot are said."],
+        "answer_random" : ["The days from Rrosh hashanah to Yom Kipur which according to the bible is the days of law and sentence.", "all of the days in Teshrai that they are the law and sentence days.", "The Yom Kipurim war in 1973.", "The days in Elul when the slichot are said."],
+    },
+    7 : {
+        "question" : "What is Atonement?",
+        "answer" : ["A custom made by jewish before Yom kipur.", "A prayer that is said in yom kipur in which the jewish people request atonement for their wrongs.", "A phrase that is between a mother and her children.", "A collection of prayers and piyyutim to Yom kipur"],
+        "answer_random" : ["A custom made by jewish before Yom kipur.", "A prayer that is said in yom kipur in which the jewish people request atonement for their wrongs.", "A phrase that is between a mother and her children.", "A collection of prayers and piyyutim to Yom kipur"]
+    },
+    8 : {
+        "question" : "The Kol Nidrei prayer is: ",
+        "answer" : ["A preayer that opens Yom kipur that is said before the sunsets.", "A prayer said if a jewish wants to Landor vows.", "A prayer said by a jewish when the tashlih ceramony occurs.", "A prayer that is being said in the forgivness days before Rosh hashanah"],
+        "answer_random" : ["A preayer that opens Yom kipur that is said before the sunsets.", "A prayer said if a jewish wants to Landor vows.", "A prayer said by a jewish when the tashlih ceramony occurs.", "A prayer that is being said in the forgivness days before Rosh hashanah"]
+    },
+    9 : {
+        "question" : "The jewish people celebrate Sukkot as a reminder for: ",
+        "answer" : ["The meeting of the children of Israel in a Sukka after their departure from Egypt.", "The sukka that the children of Israel built in the asif season.", "The sukkot that were astablished by shephers in israel.", "The sukkot that were astablished by the pilgrims in jerusalem."],
+        "answer_random" : ["The meeting of the children of Israel in a Sukka after their departure from Egypt.", "The sukka that the children of Israel built in the asif season.", "The sukkot that were astablished by shephers in israel.", "The sukkot that were astablished by the pilgrims in jerusalem."]
+    },
+    10 : {
+        "question" : "The ushpizin is a nickname for: ",
+        "answer" : ["The fathers of the nation according to tradition stay in the sukka.", "The four genders.", "Cooked vegetables that jewish people eat in Rosh hashanah eve.", "A tradition to make a festive holiday meal."],
+        "answer_random" : ["The fathers of the nation according to tradition stay in the sukka.", "The four genders.", "Cooked vegetables that jewish people eat in Rosh hashanah eve.", "A tradition to make a festive holiday meal."]
     },
 }
 
 
-print("Hello and welcome to the rosh hashanah quiz!\n")
+print("Hello and welcome to the rosh hashanah quiz!")
 time.sleep(2)
 
 points = 0
@@ -44,6 +69,7 @@ for quest in quiz:
         quiz[quest]['answer_random'].remove(The_chosen_one)
     user_res = input("Enter your answer: ")
     if user_res == quiz[quest]['answer'][0]:
+        print(user_res)
         print("Correct! Good job! :)\n\n")
         points += 1
     else:
