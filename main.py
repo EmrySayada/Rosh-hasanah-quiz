@@ -33,9 +33,9 @@ quiz = {
         "answer_random" : ["The days from Rrosh hashanah to Yom Kipur which according to the bible is the days of law and sentence.", "all of the days in Teshrai that they are the law and sentence days.", "The Yom Kipurim war in 1973.", "The days in Elul when the slichot are said."],
     },
     7 : {
-        "question" : "What is Atonement?",
-        "answer" : ["A custom made by jewish before Yom kipur.", "A prayer that is said in yom kipur in which the jewish people request atonement for their wrongs.", "A phrase that is between a mother and her children.", "A collection of prayers and piyyutim to Yom kipur"],
-        "answer_random" : ["A custom made by jewish before Yom kipur.", "A prayer that is said in yom kipur in which the jewish people request atonement for their wrongs.", "A phrase that is between a mother and her children.", "A collection of prayers and piyyutim to Yom kipur"]
+        "question" : "What is penance?",
+        "answer" : ["A custom made by jewish before Yom kippur.", "A prayer that is said in Yom Kippur which the Jewish people request atonement for their wrongs.", "A phrase that is between a mother and her children.", "A collection of prayers and piyyutim to Yom Kippur."],
+        "answer_random" : ["A custom made by jewish before Yom kippur.", "A prayer that is said in Yom Kippur which the Jewish people request atonement for their wrongs.", "A phrase that is between a mother and her children.", "A collection of prayers and piyyutim to Yom Kippur."],
     },
     8 : {
         "question" : "The Kol Nidrei prayer is: ",
